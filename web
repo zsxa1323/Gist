@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+    <script type="text/javascript">
+      
+      $(document).ready(function(){
+        $('#menu-icon1').click(function(){
+          $(this).toggleClass('open');
+          $('#open_menu_back').toggleClass('open');
+        });
+      });
+
+
+    </script>
+
+
+
+    <style>
+
+    html,body{
+      height: 100%;
+      width: 100%;
+    }
+
+    body{
+      background: url('back/back.jpg') repeat-y center center fixed;
+       -webkit-background-size: cover; 
+       -moz-background-size: cover; 
+       -o-background-size: cover; 
+       background-size: cover;
+       background-position: 70% 0px;
+    }
+
+      #ys-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: 0px 0px;
+        padding: 10px;
+      }
+
+      #ys-topbar{
+        overflow: auto;
+        line-height: 50px;
+        background-color: black;
+        background:rgba(0,0,0,0.6);
+        color: white;
+      }
+
+      #ys-topbar li{
+        display: inline-block;
+        float: left;
+      }
+
+      #ys-header {
+        width: 80.5%;
+        padding: 20px;
+        margin-bottom: 20px;
+        /*border: 1px solid #bcbcbc;*/
+      }
+      #ys-content {
+        background-color: white;
+        background: rgba(0,0,0,0.1);
+        width: auto;
+        height: auto;
+        padding: 0px;
+        margin-bottom: 20px;
+        float: left;
+       /* border: 1px solid #bcbcbc;*/
+      }
+      #ys-sidebar {
+        width: 16%;
+        height: 100%;
+        padding: 20px;
+        /*margin-bottom: 20px;*/
+        border: 1px solid #bcbcbc;
+        position: absolute; right: 0; top: 0;
+        background-color: #2d2d2d;
+        background:rgba(0,0,0,0.6);
+        line-height: middle;
+      }
+
+      #ys-footer {
+        clear: both;
+        border: 1px solid #bcbcbc;
+        line-height: 40px;
+      }
+
+      #menu_image{
+        padding: 0px;
+        margin: 0px;
+        height: 30px;
+      }
+      
+
+      #menu-group{
+        display: none;
+        margin: 20px 10px;
+      }
+
+      #open_menu_back{
+        display: none;
+        overflow: auto;
+        line-height: 30px;
+        background-color: black;
+        background:rgba(0,0,0,0.6);
+        color: white;
+      }
+
+      #open_menu_back li{
+        list-style: none;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+      }
+
+      #open_menu_back li a{
+        color: white;
+      }
+
+    
+    </style>
+    <link rel="stylesheet" type="text/css" href="media_1.css">
+    <link rel="stylesheet" type="text/css" href="menu.css">
+    <link rel="stylesheet" type="text/css" href="menu_ani.css">
+
+    
+  </head>
+  <body>
+    
+
+    <div id="ys-container">
+      <div id="ys-topbar">
+        <ul>
+          <li id="login_button"><a href="">LOGIN</a></li>
+          <li class="min_color"><a href="pinformation.html">RESIST</a></li>
+          <li><a href="searchIdPw.html">FIND PROFILE</a></li>
+          <li class="min_color"><a href="myTravel.html">MY TRAVEL</a></li>
+          <li><a href="shoppingbasket.html">SHOPPING BASKET</a></li>
+          <li class="menuButton">
+            
+            <div id="menu-group">
+              <div id="menu-icon1">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+
+          </li>
+        </ul>
+      </div>
+
+      <div id="open_menu_back">
+
+        <div id="open_menu">
+          <ul>
+            <li><a href="index.html">INTRODUCE</a></li>
+            <li><a href="notice_freeboard.html">NOTICE</a></li>
+            <li><a href="Gallery-JH.html">GALLARY</a></li>
+            <li><a href="REST_TRAVEL_kdh.html">TRAVEL INFO</a></li>
+            <li><a href="company_introduceus.html">COMPANY</a></li>
+          </ul>
+        </div>
+        
+      </div>
+
+      <div id="ys-header">
+        <h1 id="TRAVEL" style="color: black">T R A V E L</h1>
+      </div>
+
+      <div id="ys_menu" style="display: none;">
+
+      </div>
+
+      <div id="ys-content" style="overflow: auto;">
+
+        <div style="padding: 10px; background-color:; margin: 10px; ">
+
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="image_sliding/aa.jpg" alt="happy" style="width:100%;">
+              </div>
+
+              <div class="item">
+                <img src="image_sliding/bb.jpg" alt="to your" style="width:100%;">
+              </div>
+    
+              <div class="item">
+                <img src="image_sliding/cc.jpg" alt="travel" style="width:100%;">
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+        </div>
+
+        <div id="contents_board">
+        <h4>올해의 최고의 순간</h4>
+          <p>
+            ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+
+      </div>
+
+      <div id="ys-sidebar">
+
+        <img src="back/profile_image.png" style="width: 70%; margin: 10%">
+
+        <table id="profile_table">
+          <tr>
+            <th><a href="">Log-out</a></th>
+            <th><a href="">My log</a></th>
+          </tr>
+          <tr>
+            <th id="tb_pro"><a href="myProfile.html">My Profile</a></th>
+          </tr>
+        </table>
+
+        <ul id="sidebar">
+          <li><a href="index.html">INTRODUCE</a></li>
+          <li><a href="notice_freeboard.html">NOTICE</a>
+            <ul>
+              <li><a href="notice_freeboard.html">free board</a></li>
+              <li><a href="notice_question.html">question</a></li>
+              <li><a href="notice_event.html">event</a></li>
+            </ul>
+          </li>
+          <li><a href="Gallery-JH.html">GALLARY</a></li>
+          <li><a href="STORY.html">TRAVEL INFO</a>
+              <ul>
+                <li><a href="STORY.html">story</a></li>
+                <li><a href="REST_TRAVEL_kdh.html">rest travel</a></li>
+                <li><a href="FOOD_TRAVEL_kdh.html">food travel</a></li>
+                <li><a href="SOLO_TRAVEL_kdh.html">solo travel</a></li>
+                <li><a href="FAMILY_TRAVEL_kdh.html">family travel</a></li>
+              </ul>
+          </li>
+          <li><a href="company_introduceus.html">COMPANY</a>
+              <ul>
+                <li><a href="company_introduceus.html">introduce us</a></li>
+                <li><a href="Company_History_jihee_3.html">history</a></li>
+                <li><a href="company_visitroad.html">visit load</a></li>
+                <li><a href="Company_Introduce_Product_jihee_3.html">introduce products</a></li>
+              </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div id="ys-footer">
+        <ul>
+          <li>SYS COMPANY(주)</li>
+          <li>TEL:01026690136</li>
+          <li>
+          <a href="http://www.mrhi.or.kr/">ADDR:미래능력개발교육원 신방빌딩 4층</a></li>
+          <li>HELLO WEB WORLD</li>
+        </ul>
+      </div>
+      
+    </div>
+
+    <h1 id="yourBest" style="position: absolute; left: 40%; top: 70%">당신의 최고의 순간은 언제인가요?</h1>
+
+  </body>
+</html>
